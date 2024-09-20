@@ -1,0 +1,17 @@
+
+<svg width="584" height="450" viewBox="0 0 584 581" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="291.52" cy="291.848" r="291.52" fill="#B7AA98"/>
+  <path d="M141.595 263.715C141.595 180.811 208.802 113.604 291.705 113.604V113.604C374.609 113.604 441.816 180.811 441.816 263.715L441.816 711.457H141.595L141.595 263.715Z" fill="#EB5939"/>
+
+  <!-- Left Eye -->
+  <ellipse cx="229.314" cy="290.395" rx="26.8558" ry="32.8238" fill="#262626">
+    <animate attributeName="ry" values="32.8238; 5; 0; 5; 32.8238" keyTimes="0; 0.15; 0.3; 0.4; 1" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="26.8558; 22; 10; 22; 26.8558" keyTimes="0; 0.15; 0.3; 0.4; 1" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Right Eye -->
+  <ellipse cx="347.818" cy="290.395" rx="26.8558" ry="32.8238" fill="#262626">
+    <animate attributeName="ry" values="32.8238; 5; 0; 5; 32.8238" keyTimes="0; 0.15; 0.3; 0.4; 1" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="26.8558; 22; 10; 22; 26.8558" keyTimes="0; 0.15; 0.3; 0.4; 1" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
