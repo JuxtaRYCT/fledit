@@ -12,8 +12,11 @@
     "electron-dev": "concurrently \"npm run dev\" \"npm run electron\""
   },
   "dependencies": {
+    "@auth/supabase-adapter": "^1.5.0",
+    "@supabase/supabase-js": "^2.45.4",
     "electron-is-dev": "^3.0.1",
     "next": "14.2.13",
+    "next-auth": "^5.0.0-beta.21",
     "react": "^18",
     "react-dom": "^18"
   },
