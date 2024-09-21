@@ -4,10 +4,11 @@ import React from "react";
 import { SessionProvider } from "next-auth/react";
 
 export default async function Layout() {
-  const session = await auth();
-  if (!session?.user?.email) {
-    return redirect("/home");
-  }
+    const session = await auth();
+    if (!session?.user?.email) {
+        return redirect("/landingthefirst");
+    }
+
 
   return (
     <SessionProvider>
