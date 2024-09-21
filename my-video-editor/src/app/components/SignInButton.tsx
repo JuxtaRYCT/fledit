@@ -1,19 +1,18 @@
 import { signIn } from "@/auth";
+import Image from "next/image";
+import googlelogo from "@/app/assets/Vector.svg";
 
 export default function SignIn() {
-    return (
-        <form
-            action={async () => {
-                "use server";
-                await signIn("google");
-            }}
-        >
-            <button
-                type="submit"
-                className="text-white bg-[#FF4500] hover:bg-[#e03e00] active:bg-[#cc3800] p-3 rounded-xl transition-all duration-300 ease-in-out shadow-lg text-lg font-bold"
-            >
-                Sign in with Google
-            </button>
-        </form>
-    );
+  return (
+    <form
+      action={async () => {
+        "use server";
+        await signIn("google");
+      }}
+    >
+      <button type="submit" className="bg-[#262626] p-2 rounded-full my-2">
+        <Image src={googlelogo} alt="google" className="h-[80%]" />
+      </button>
+    </form>
+  );
 }

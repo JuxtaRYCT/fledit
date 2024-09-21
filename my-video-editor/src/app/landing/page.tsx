@@ -1,6 +1,5 @@
 import SignIn from "../components/SignInButton";
 import Image from "next/image";
-import googlelogo from "@/app/assets/Vector.svg";
 import greyfinger from "@/app/assets/greyfinger.svg";
 import inkpen from "@/app/assets/inkpen.svg";
 
@@ -47,12 +46,7 @@ export default function Home() {
             Login
           </button>
         </form>
-        {/* <button className="rounded-full border-2 flex p-4 relative border-[#262626] bg-[#262626] my-3">
-          <Image src={googlelogo} alt="google" className="w-[60%]" />
-        </button> */}
-        <button className="bg-[#262626] p-2 rounded-full my-2">
-          <Image src={googlelogo} alt="google" className="h-[80%]" />
-        </button>
+        <SignIn />
       </div>
     </div>
   );
