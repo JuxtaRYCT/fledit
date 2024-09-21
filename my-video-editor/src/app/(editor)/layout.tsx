@@ -9,9 +9,10 @@ export default async function Layout() {
         return redirect("/landingthefirst");
     }
 
-    return (
-        <SessionProvider>
-            <div>Am i in this page?</div>
-        </SessionProvider>
-    );
+
+  return (
+    <SessionProvider>
+      <div>Am i in this page?</div>
+    </SessionProvider>
+  );
 }

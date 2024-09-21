@@ -1,54 +1,59 @@
 import SignIn from "../components/SignInButton";
+import Image from "next/image";
+import googlelogo from "@/app/assets/Vector.svg";
+import greyfinger from "@/app/assets/greyfinger.svg";
+import inkpen from "@/app/assets/inkpen.svg";
 
 export default function Home() {
-    return (
-        <div className="flex flex-row h-screen">
-            <div className="w-[75%] flex flex-col bg-black text-white h-full justify-center items-center p-10 relative">
-                <span className="text-7xl font-bold text-[#FF4500]">
-                    FLEDIT
-                </span>
-                <p className="text-sm mt-2 text-[#ffffffcc]">
-                    Sync, Edit, Flow.
-                </p>
+  return (
+    <div className="relative flex flex-row h-screen overflow-y-hidden">
+      <div
+        className=" w-[30%] flex flex-col bg-[#262626] h-full items-center"
+        style={{
+          backgroundImage: `url('/Group 1236.svg')`,
+          backgroundRepeat: "repeat-y",
+          backgroundPosition: "centre",
+          backgroundSize: " 700px",
+        }}
+      >
+        <Image
+          src={inkpen}
+          alt="ink pen"
+          className="h-[20%] absolute top-[0%] left-[3%]"
+        />
+        <Image
+          src={greyfinger}
+          alt="grey finger"
+          className="h-[80%] absolute bottom-[-10%]"
+        />
+      </div>
 
-                <p className="text-2xl mt-10 text-center max-w-2xl leading-relaxed">
-                    <span className="text-[#FF4500]">Fledit</span> is a
-                    collaborative video editing platform that lets creators work
-                    together in
-                    <span className="text-[#FF4500]"> real-time</span>, from
-                    anywhere. With seamless{" "}
-                    <span className="text-[#FF4500]">cloud integration</span>{" "}
-                    and intuitive tools, Fledit simplifies workflows, making it
-                    easy to sync ideas and craft stunning videos without the
-                    hassle.
-                    <strong>Create together, without limits.</strong>
-                </p>
+      <div className="w-[70%] flex flex-col h-full justify-center items-center bg-[#EB5939] shadow-lg">
+        <span className="text-7xl font-bold text-[#262626]">Good Morning</span>
+        <span className="text-[#262626] font-semibold text-xl">Login</span>
+        <form action="" className="flex flex-col items-centre ">
+          <input
+            type="text"
+            className="p-2 my-3 bg-transparent rounded border-2 w-96 border-dashed border-black placeholder-black outline-none"
+            placeholder="Email-ID"
+          />
 
-                <div className="absolute bottom-0 left-0 p-10">
-                    <svg
-                        className="w-24 h-24 text-[#FF4500]"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <circle
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="white"
-                            strokeWidth="2"
-                        />
-                    </svg>
-                </div>
-            </div>
-
-            <div className="w-[25%] flex flex-col h-full justify-center items-center bg-[#2d2d2d] shadow-lg">
-                <SignIn />
-                <p className="text-center mt-6 text-[#FF4500] text-sm font-semibold max-w-xs">
-                    Sign in to get started and invite your team to collaborate
-                    effortlessly!
-                </p>
-            </div>
-        </div>
-    );
+          <input
+            type="text"
+            className="p-2 my-3 bg-transparent rounded border-2 w-96 border-dashed border-black placeholder-black outline-none"
+            placeholder="Password"
+          />
+          <button className="p-2 my-3 bg-[#262626] rounded border w-96 border-[#262626] text-[#EB5939]">
+            Login
+          </button>
+        </form>
+        {/* <button className="rounded-full border-2 flex p-4 relative border-[#262626] bg-[#262626] my-3">
+          <Image src={googlelogo} alt="google" className="w-[60%]" />
+        </button> */}
+        <button className="bg-[#262626] p-2 rounded-full my-2">
+          <Image src={googlelogo} alt="google" className="h-[80%]" />
+        </button>
+      </div>
+    </div>
+  );
 }
